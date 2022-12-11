@@ -61,9 +61,9 @@
            :repo "lepisma/org-krita"
            :files ("resources" "*.el")))
 (package! org-preview-html)
-;; (package! polymode)
-;; (package! org-agda-mode
-;;   :recipe (:host github
-;;            :repo "alhassy/org-agda-mode"
-;;            :files ("resources" "*.el")))
+;;(package! polymode)
+;;(package! org-agda-mode
+;;  :recipe (:host github
+;;           :repo "alhassy/org-agda-mode"
+;;           :files ("resources" "*.el")))
 (package! exec-path-from-shell)

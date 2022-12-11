@@ -40,8 +40,8 @@
 ;;      doom-unicode-font (font-spec :family "mononoki")
 ;;      doom-variable-pitch-font (font-spec :family "mononoki"))
 (setq doom-font (font-spec :family "DejaVu Sans Mono")
-      doom-unicode-font (font-spec :family "DejaVu Sans")
-      doom-variable-pitch-font (font-spec :family "DejaVu Sans"))
+      doom-unicode-font (font-spec :famly "STIX Math")
+      doom-variable-pitch-font (font-spec :family "DejaVu Sans" :size 20))
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
@@ -141,14 +141,6 @@
    "Agda2 code" '("#+begin_src: agda2\n#+end_src\n">) "<agda"))
 (use-package! org-preview-html
   :after org-mode)
-;;(use-package! polymode
-;;  :after org-mode)
-
-;;(use-package! org-agda-mode
-;;  :after polymode
-;;  :config
-;;  (add-to-list 'org-structure-template-alist '("g" . "src agda2")))
-;;  (add-to-list 'auto-mode-alist '("\\.lagda\\.org" . org-agda-mode))
 
 (after! treeemacs
   (require 'dired)
