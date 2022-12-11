@@ -34,7 +34,7 @@
 ;; `load-theme' function. This is the default:
 
 ;; (setq doom-theme 'doom-one-light)
-(setq doom-theme 'doom-homage-white)
+(setq doom-theme 'my-homage-white)
 
 ;; (setq doom-font (font-spec :family "mononoki")
 ;;      doom-unicode-font (font-spec :family "mononoki")
@@ -108,6 +108,12 @@
 ;;    '(outline-3 :inherit t :height 1.3)
 ;;    '(outline-4 :inherit t :height 1.2)
 ;;    '(outline-5 :inherit t :height 1.1)))
+;; (after! soraire-mode
+;;  (solaire-global-mode -1))
+
+;; (custom-theme-set-faces! 'doom-homage-white
+;;      '(default :foreground "#000000" :background "#F0F0F0")
+;;      '(hl-line :foreground "#000000" :background "#FAFAFA"))
 
 (use-package! websocket
   :after org-roam
