@@ -67,3 +67,5 @@
 ;;           :repo "alhassy/org-agda-mode"
 ;;           :files ("resources" "*.el")))
 (package! exec-path-from-shell)
+
+(package! key-chord)

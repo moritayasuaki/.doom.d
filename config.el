@@ -34,13 +34,14 @@
 ;; `load-theme' function. This is the default:
 
 ;; (setq doom-theme 'doom-one-light)
-(setq doom-theme 'my-homage-white)
-
+(if window-system
+  (setq doom-theme 'doom-homage-black)
+  (setq doom-theme 'my-homage-white))
 ;; (setq doom-font (font-spec :family "mononoki")
 ;;      doom-unicode-font (font-spec :family "mononoki")
 ;;      doom-variable-pitch-font (font-spec :family "mononoki"))
-(setq doom-font (font-spec :family "DejaVu Sans Mono")
-      doom-unicode-font (font-spec :famly "STIX Math")
+(setq doom-font (font-spec :family "DejaVu Sans Mono" :size 18)
+      doom-unicode-font (font-spec :family "TeX Gyre DejaVu Math")
       doom-variable-pitch-font (font-spec :family "DejaVu Sans" :size 20))
 
 ;; This determines the style of line numbers in effect. If set to `nil', line
@@ -167,3 +168,8 @@
 (map!
  :nv [remap evil-next-line] #'evil-next-visual-line
  :nv [remap evil-previous-line] #'evil-previous-visual-line)
+
+
+
+(key-chord-define evil-insert-state-map "jj" 'evil-normal-state)
+(key-chord-mode 1)
