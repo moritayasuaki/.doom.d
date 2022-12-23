@@ -40,7 +40,7 @@
 ;; (setq doom-font (font-spec :family "mononoki")
 ;;      doom-unicode-font (font-spec :family "mononoki")
 ;;      doom-variable-pitch-font (font-spec :family "mononoki"))
-(setq doom-font (font-spec :family "DejaVu Sans Mono" :size 18)
+(setq doom-font (font-spec :family "DejaVu Sans Mono" :size 20)
       doom-unicode-font (font-spec :family "TeX Gyre DejaVu Math")
       doom-variable-pitch-font (font-spec :family "DejaVu Sans" :size 20))
 
